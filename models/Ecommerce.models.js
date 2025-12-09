@@ -21,16 +21,20 @@ const ProductSchema = new mongoose.Schema(
     },
 
     category: {
-      type: String,
-      required: true,
-      enum: [
-        "men's clothing",
-        "women's clothing",
-        "jewelery",
-        "electronics",
-        "other",
-      ],
-      default: "other",
+      name: {
+        type: String,
+        required: true,
+        enum: [
+          "men's clothing",
+          "women's clothing",
+          "jewelery",
+          "electronics",
+          "other",
+        ],
+      },
+      image: {
+        type: String,
+      },
     },
 
     image: {
