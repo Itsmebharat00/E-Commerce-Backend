@@ -16,9 +16,11 @@ const products = [
     description: "Your perfect pack for everyday use and walks in the forest.",
     category: {
       name: "men's clothing",
-      image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642",
+      image:
+        "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
-    image: "https://images.unsplash.com/photo-1616627981303-1b3a6ec0d78a",
+    image:
+      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     rating: { rate: 3.9, count: 120 },
   },
   {
@@ -28,9 +30,11 @@ const products = [
       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket.",
     category: {
       name: "men's clothing",
-      image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642",
+      image:
+        "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
-    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+    image:
+      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     rating: { rate: 4.1, count: 259 },
   },
   {
@@ -39,9 +43,11 @@ const products = [
     description: "Great outerwear jackets for Spring/Autumn/Winter.",
     category: {
       name: "men's clothing",
-      image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642",
+      image:
+        "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
-    image: "https://images.unsplash.com/photo-1585386959984-a4155226e2a1",
+    image:
+      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     rating: { rate: 4.7, count: 500 },
   },
   {
@@ -51,9 +57,11 @@ const products = [
       "The color could be slightly different between on the screen and in practice.",
     category: {
       name: "men's clothing",
-      image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642",
+      image:
+        "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
-    image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
+    image:
+      "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     rating: { rate: 2.1, count: 430 },
   },
   {
@@ -63,9 +71,11 @@ const products = [
       "Satisfaction Guaranteed. Return or exchange any order within 30 days.",
     category: {
       name: "jewelery",
-      image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3",
+      image:
+        "https://plus.unsplash.com/premium_photo-1681276170281-cf50a487a1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D",
     },
-    image: "https://images.unsplash.com/photo-1545519031-78b1c8c2c7f2",
+    image:
+      "https://plus.unsplash.com/premium_photo-1681276170281-cf50a487a1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D",
     rating: { rate: 3.9, count: 70 },
   },
   {
@@ -74,9 +84,11 @@ const products = [
     description: "Classic Created Wedding Engagement Solitaire Diamond Ring.",
     category: {
       name: "jewelery",
-      image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3",
+      image:
+        "https://plus.unsplash.com/premium_photo-1681276170281-cf50a487a1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D",
     },
-    image: "https://images.unsplash.com/photo-1522312346375-4a9fa1a0c85a",
+    image:
+      "https://plus.unsplash.com/premium_photo-1681276170281-cf50a487a1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D",
     rating: { rate: 3, count: 400 },
   },
   {
@@ -85,9 +97,11 @@ const products = [
     description: "Rose Gold Plated Double Flared Tunnel Plug Earrings.",
     category: {
       name: "jewelery",
-      image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3",
+      image:
+        "https://plus.unsplash.com/premium_photo-1681276170281-cf50a487a1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D",
     },
-    image: "https://images.unsplash.com/photo-1549887534-8f08017b27ab",
+    image:
+      "https://plus.unsplash.com/premium_photo-1681276170281-cf50a487a1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D",
     rating: { rate: 1.9, count: 100 },
   },
   {
@@ -97,9 +111,11 @@ const products = [
       "USB 3.0 and USB 2.0 Compatibility. High capacity in a compact design.",
     category: {
       name: "electronics",
-      image: "https://images.unsplash.com/photo-1580910051073-33a2abebd6cb",
+      image:
+        "https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D",
     },
-    image: "https://images.unsplash.com/photo-1580910051073-33a2abebd6cb",
+    image:
+      "https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D",
     rating: { rate: 3.3, count: 203 },
   },
   {
@@ -109,9 +125,11 @@ const products = [
       "Easy upgrade for faster boot-up, shutdown, application load and response.",
     category: {
       name: "electronics",
-      image: "https://images.unsplash.com/photo-1580910051069-fd46015e01a1",
+      image:
+        "https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D",
     },
-    image: "https://images.unsplash.com/photo-1580910051069-fd46015e01a1",
+    image:
+      "https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D",
     rating: { rate: 2.9, count: 470 },
   },
   {
@@ -120,9 +138,11 @@ const products = [
     description: "Note: The jackets are US standard sizes.",
     category: {
       name: "women's clothing",
-      image: "https://images.unsplash.com/photo-1600185360480-869d48a5ee90",
+      image:
+        "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW5zJTIwY2xvdGhpbmd8ZW58MHx8MHx8fDA%3D",
     },
-    image: "https://images.unsplash.com/photo-1600185360480-869d48a5ee90",
+    image:
+      "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW5zJTIwY2xvdGhpbmd8ZW58MHx8MHx8fDA%3D",
     rating: { rate: 2.6, count: 235 },
   },
 ];
