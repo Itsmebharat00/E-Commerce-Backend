@@ -15,7 +15,7 @@ const products = [
     price: 109.95,
     description: "Your perfect pack for everyday use and walks in the forest.",
     category: {
-      name: "men's clothing",
+      name: "men'sclothing",
       image:
         "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
@@ -29,7 +29,7 @@ const products = [
     description:
       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket.",
     category: {
-      name: "men's clothing",
+      name: "men'sclothing",
       image:
         "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
@@ -42,7 +42,7 @@ const products = [
     price: 55.99,
     description: "Great outerwear jackets for Spring/Autumn/Winter.",
     category: {
-      name: "men's clothing",
+      name: "men'sclothing",
       image:
         "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
@@ -56,7 +56,7 @@ const products = [
     description:
       "The color could be slightly different between on the screen and in practice.",
     category: {
-      name: "men's clothing",
+      name: "men'sclothing",
       image:
         "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoaW5nfGVufDB8fDB8fHww",
     },
@@ -137,7 +137,7 @@ const products = [
     price: 56.99,
     description: "Note: The jackets are US standard sizes.",
     category: {
-      name: "women's clothing",
+      name: "women'sclothing",
       image:
         "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW5zJTIwY2xvdGhpbmd8ZW58MHx8MHx8fDA%3D",
     },
@@ -191,16 +191,16 @@ async function readProductsByCategory(categoryName) {
   }
 }
 
-app.get("/products/:categoryName", async (req, res) => {
+app.get("/products/category/:categoryName", async (req, res) => {
   try {
-    const products = await readProductsByCategory(req.params.category);
-    if (products) {
+    const products = await readProductsByCategory(req.params.categoryName);
+    if (products.length != 0) {
       res.json(products);
     } else {
-      res.status(404).json({ error: "Product not found." });
+      res.status(404).json({ error: "No products found." });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch product." });
+    res.status(500).json({ error: "Failed to fetch products." });
   }
 });
 
