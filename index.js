@@ -185,7 +185,7 @@ app.get("/products", async (req, res) => {
 async function readProductsByCategory(categoryName) {
   try {
     const Products = await ProductSchema.find({
-      category: categoryName,
+      "category.name": categoryName,
     });
     return Products;
   } catch (error) {
