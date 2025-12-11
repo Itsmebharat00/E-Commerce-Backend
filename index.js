@@ -184,7 +184,9 @@ app.get("/products", async (req, res) => {
 
 async function readProductsByCategory(categoryName) {
   try {
-    const Products = await ProductSchema.find({ category: categoryName });
+    const Products = await ProductSchema.find({
+      "category.name": categoryName,
+    });
     return Products;
   } catch (error) {
     throw error;
@@ -193,7 +195,8 @@ async function readProductsByCategory(categoryName) {
 
 app.get("/products/category/:categoryName", async (req, res) => {
   try {
-    const products = await readProductsByCategory(req.params.categoryName);
+    const { categoryName } = req.params;
+    const products = await readProductsByCategory(categoryName);
     if (products.length > 0) {
       res.json(products);
     } else {
