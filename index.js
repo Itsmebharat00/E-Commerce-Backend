@@ -232,26 +232,26 @@ app.get("/products/:productId", async (req, res) => {
 });
 
 // Orders
-// app.post("/products/orders", async (req, res) => {
-//   try {
-//     const newOrder = new OrderSchema(req.body);
-//     const savedOrder = await newOrder.save();
-//     res.status(201).json(savedOrder);
-//   } catch (error) {
-//     console.log("Error saving order:", error);
-//     res.status(500).json({ error: "Failed to save order" });
-//   }
-// });
+app.post("/orders", async (req, res) => {
+  try {
+    const newOrder = new OrderSchema(req.body);
+    const savedOrder = await newOrder.save();
+    res.status(201).json(savedOrder);
+  } catch (error) {
+    console.log("Error saving order:", error);
+    res.status(500).json({ error: "Failed to save order" });
+  }
+});
 
-// app.get("/products/orders", async (req, res) => {
-//   try {
-//     const orders = await OrderSchema.find();
-//     res.json(orders);
-//   } catch (error) {
-//     console.log("Error fetching orders:", error);
-//     res.status(500).json({ error: "Failed to fetch orders" });
-//   }
-// });
+app.get("/orders", async (req, res) => {
+  try {
+    const orders = await OrderSchema.find();
+    res.json(orders);
+  } catch (error) {
+    console.log("Error fetching orders:", error);
+    res.status(500).json({ error: "Failed to fetch orders" });
+  }
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
