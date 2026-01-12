@@ -3,6 +3,7 @@
 const { initializingDatabase } = require("./db/db.connect");
 initializingDatabase();
 const ProductSchema = require("./models/Ecommerce.models");
+const OrderSchema = require("./models/Order.models");
 const express = require("express");
 const app = express();
 app.use(express.json());
@@ -227,6 +228,28 @@ app.get("/products/:productId", async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch product by ID" });
+  }
+});
+
+// Orders
+app.post("/orders", async (req, res) => {
+  try {
+    const newOrder = new OrderSchema(req.body);
+    const savedOrder = await newOrder.save();
+    res.status(201).json(savedOrder);
+  } catch (error) {
+    console.log("Error saving order:", error);
+    res.status(500).json({ error: "Failed to save order" });
+  }
+});
+
+app.get("/orders", async (req, res) => {
+  try {
+    const orders = await OrderSchema.find();
+    res.json(orders);
+  } catch (error) {
+    console.log("Error fetching orders:", error);
+    res.status(500).json({ error: "Failed to fetch orders" });
   }
 });
 
