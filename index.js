@@ -9,7 +9,6 @@ const app = express();
 app.use(express.json());
 app.use("/orders", OrderSchema);
 const cors = require("cors");
-const Order = require("./models/Order.models");
 app.use(
   cors({
     origin: [
