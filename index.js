@@ -3,10 +3,12 @@
 const { initializingDatabase } = require("./db/db.connect");
 initializingDatabase();
 const ProductSchema = require("./models/Ecommerce.models");
+const OrderSchema = require("./models/Order.models");
 const express = require("express");
 const app = express();
 app.use(express.json());
 const cors = require("cors");
+const Order = require("./models/Order.models");
 app.use(
   cors({
     origin: [
@@ -235,6 +237,27 @@ app.get("/products/:productId", async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch product by ID" });
+  }
+});
+
+// Orders
+app.post("/", async (req, res) => {
+  try {
+    const newOrder = new OrderSchema(req.body);
+    const savedOrder = await newOrder.save();
+    res.status(201).json(savedOrder);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to place order" });
+  }
+});
+
+// Get all orders
+app.get("/", async (req, res) => {
+  try {
+    const orders = await OrderSchema.find();
+    res.json(orders);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch orders" });
   }
 });
 
