@@ -7,7 +7,15 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 const cors = require("cors");
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://stylekart-two-smoky-45.vercel.app/",
+    ],
+    credentials: true,
+  })
+);
 
 const products = [
   {
