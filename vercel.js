@@ -1,6 +1,8 @@
-/** @format */ {
+/** @format */
+
+{
   ("version");
   2, "builds";
-  [{ src: "index.js", use: "@vercel/node" }], "routes";
-  [{ src: "/(.*)", dest: "/index.js" }];
+  [{ src: "index.js", use: "@vercel/node" }], "rewrites";
+  [{ source: "/(.*)", destination: "index.js" }];
 }
