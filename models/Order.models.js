@@ -4,19 +4,19 @@ const mongoose = require("mongoose");
 
 const OrderSchema = new mongoose.Schema(
   {
-    items: [
-      {
-        _id: String,
-        title: String,
-        price: Number,
-        quantity: Number,
-        image: String,
-      },
-    ],
-    totalAmount: Number,
+    items: {
+      type: [],
+      required: true,
+    },
+
+    totalAmount: {
+      type: Number,
+      required: true,
+    },
+
     address: {
-      label: String,
-      address: String,
+      type: {},
+      required: true,
     },
   },
   { timestamps: true }
