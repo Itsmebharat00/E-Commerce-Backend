@@ -7,17 +7,8 @@ const OrderSchema = require("./models/Order.models");
 const express = require("express");
 const app = express();
 app.use(express.json());
-app.use("/orders", OrderSchema);
 const cors = require("cors");
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://stylekart-two-smoky-45.vercel.app/",
-    ],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 const products = [
   {
