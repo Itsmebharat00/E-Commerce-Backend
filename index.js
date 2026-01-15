@@ -232,7 +232,7 @@ app.get("/products/:productId", async (req, res) => {
 });
 
 // Orders
-app.post("/", async (req, res) => {
+app.post("/orders", async (req, res) => {
   try {
     const newOrder = new OrderSchema(req.body);
     const savedOrder = await newOrder.save();
@@ -243,7 +243,7 @@ app.post("/", async (req, res) => {
 });
 
 // Get all orders
-app.get("/", async (req, res) => {
+app.get("/orders", async (req, res) => {
   try {
     const orders = await OrderSchema.find();
     res.json(orders);
