@@ -157,7 +157,7 @@ async function createEcommerce(data) {
     throw error;
   }
 }
-// createEcommerce(products);
+// createEcommerce(products)
 
 async function readAllProducts() {
   try {
@@ -242,7 +242,6 @@ app.post("/orders", async (req, res) => {
   }
 });
 
-// Get all orders
 app.get("/orders", async (req, res) => {
   try {
     const orders = await OrderSchema.find();
