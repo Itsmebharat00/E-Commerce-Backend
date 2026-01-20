@@ -231,30 +231,6 @@ app.get("/products/:productId", async (req, res) => {
   }
 });
 
-async function readWishlistProducts() {
-  try {
-    const allProducts = await ProductSchema.find();
-    return allProducts;
-  } catch (error) {
-    console.log("Error in fetching Products:", error);
-    throw error;
-  }
-}
-
-app.get("/products/wishlist", async (req, res) => {
-  try {
-    const products = await readWishlistProducts();
-    if (products.length != 0) {
-      res.json(products);
-    } else {
-      res.status(404).json({ error: "No Products found." });
-    }
-  } catch (error) {
-    console.log("Error while fetching data:", error);
-    res.status(500).json({ error: "Failed to fetch Products" });
-  }
-});
-
 // Orders
 app.post("/orders", async (req, res) => {
   try {
